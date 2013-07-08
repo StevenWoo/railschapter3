@@ -5,7 +5,7 @@ gem 'rails', '4.0.0'
 
 
 
-group :test do
+group :development, :test do
   gem 'rspec-rails'
 end
 
