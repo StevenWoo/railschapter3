@@ -12,6 +12,8 @@ end
 gem 'pg'
 
 gem 'bootstrap-sass'
+
+gem 'rails_12factor'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
