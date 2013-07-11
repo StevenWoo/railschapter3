@@ -21,7 +21,10 @@ test:
   database: testrr
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: postgresql
   pool: 5
   timeout: 5000
+  host: localhost
+  username: postgres
+  password: psql123
+  database: realrr
