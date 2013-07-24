@@ -8,8 +8,15 @@ class SessionsController < ApplicationController
       sign_in user
       respond_to do |format|
         format.html { redirect_back_or user }
-        format.xml { render :xml => user }
-        format.json { render :json => user }
+        format.xml { 
+           render :xml => user
+        }
+        format.json {
+           output = Hash.new
+           output['remember_token'] = user[:remember_token]
+           output['id'] = user[:id]
+ 	   render :json => output 
+ 	}
       end
  
     else
